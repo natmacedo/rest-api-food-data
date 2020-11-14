@@ -67,7 +67,7 @@ namespace FoodApi.Models
         public dynamic ServingQuantity { get; set; }
 
         [BsonElement("nutriscore_score")]
-        public dynamic NutriscoreScore { get; set; }
+        public string NutriscoreScore { get; set; }
 
         [BsonElement("nutriscore_grade")]
         public string NutriscoreGrade { get; set; }
