@@ -5,8 +5,6 @@ using System.Globalization;
 
 namespace FoodApi.Models
 {
-    public class BsonBaseSerializer
-    {
         public sealed class StringOrInt32Serializer : BsonBaseSerializer
         {
             public override object Deserialize(BsonReader bsonReader, Type nominalType,
@@ -42,4 +40,3 @@ namespace FoodApi.Models
             }
         }
     }
-}
