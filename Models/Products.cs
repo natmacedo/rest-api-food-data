@@ -1,7 +1,6 @@
 ﻿using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using static FoodApi.Models.BsonBaseSerializer;
 
 namespace FoodApi.Models
 {
@@ -68,7 +67,7 @@ namespace FoodApi.Models
         public Int32 ServingQuantity { get; set; }
 
         [BsonElement("nutriscore_score")]
-        [BsonSerializer(typeof(StringOrInt32Serializer))]
+        [BsonSerializer(typeof(MyInt32Serializer))]
         public Int32 NutriscoreScore { get; set; }
 
         [BsonElement("nutriscore_grade")]
