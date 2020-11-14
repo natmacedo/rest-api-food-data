@@ -25,22 +25,22 @@ namespace FoodApi.Models
         public string Creator { get; set; }
 
         [BsonElement("creator_t")]
-        public Int64 CreatorT { get; set; }
+        public Int32 CreatorT { get; set; }
 
         [BsonElement("last_modified_t")]
-        public Int64 LastModifiedT { get; set; }
+        public Int32 LastModifiedT { get; set; }
 
         [BsonElement("product_name")]
         public string ProductName { get; set; }
 
         [BsonElement("quantity")]
-        public dynamic Quantity { get; set; }
+        public string Quantity { get; set; }
 
         [BsonElement("brands")]
         public string Brands { get; set; }
 
         [BsonElement("categories")]
-        public dynamic Categories { get; set; }
+        public string Categories { get; set; }
 
         [BsonElement("labels")]
         public string Labels { get; set; }
@@ -61,13 +61,13 @@ namespace FoodApi.Models
         public string Traces { get; set; }
 
         [BsonElement("serving_size")]
-        public dynamic Servingsize { get; set; }
+        public string Servingsize { get; set; }
 
         [BsonElement("serving_quantity")]
-        public dynamic ServingQuantity { get; set; }
+        public Int32 ServingQuantity { get; set; }
 
         [BsonElement("nutriscore_score")]
-        public string NutriscoreScore { get; set; }
+        public Int32 NutriscoreScore { get; set; }
 
         [BsonElement("nutriscore_grade")]
         public string NutriscoreGrade { get; set; }
